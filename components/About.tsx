@@ -13,7 +13,7 @@ const About = () => {
             <img
               src="/assets/teacher.webp"
               alt="Teacher"
-              className="mt-8 mx-auto w-full max-w-screen-md"
+              className="mt-8 mx-auto w-full max-w-(--breakpoint-md)"
               loading="lazy"
             />
             <p className="mt-4 text-lg text-gray-700">{settings.description}</p>

@@ -5,7 +5,7 @@ const Missions = () => {
   return (
     <section
       id="missions"
-      className="relative py-12 bg-gradient-to-r from-oceanblue to-skyblue text-lightmist"
+      className="relative py-12 bg-linear-to-r from-oceanblue to-skyblue text-lightmist"
     >
       <div className="absolute inset-0">
         <img
@@ -13,6 +13,8 @@ const Missions = () => {
           src="/assets/mission_hero.webp"
           alt="Mission Background"
           loading="lazy" // Lazy load background image
+          width={0}
+          height={0}
         />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

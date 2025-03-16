@@ -9,12 +9,11 @@ const Hero = () => {
         <Image
           src="/assets/hero.webp" // Preload webp format for faster loading
           alt="Math Tuition Background"
-          layout="fill" // Fill the container with the image
-          objectFit="cover" // Maintain aspect ratio and cover container
-          quality={75} // Image quality (0 - 100)
-          loading="eager" // Eager loading for immediate loading
+          loading="lazy" // Eager loading for immediate loading
+          width={0}
+          height={0}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-oceanblue to-skyblue opacity-75"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-oceanblue to-skyblue opacity-75"></div>
       </div>
       <div className="relative z-10 flex items-center justify-center min-h-[60vh] px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl">

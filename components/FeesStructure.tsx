@@ -6,7 +6,7 @@ const FeesStructure = () => {
   return (
     <section
       id="fees"
-      className="bg-gradient-to-r from-sky-900 to-slate-900 py-12"
+      className="bg-linear-to-r from-sky-900 to-slate-900 py-12"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-8">
@@ -35,7 +35,7 @@ const FeesStructure = () => {
                   ))}
                 </ul>
               </div>
-              <button className="mt-4 bg-oceanblue text-white py-3 px-6 text-lg rounded-lg shadow hover:bg-skyblue transition-colors duration-300">
+              <button className="mt-4 bg-oceanblue text-white py-3 px-6 text-lg rounded-lg shadow-sm hover:bg-skyblue transition-colors duration-300">
                 Buy Now
               </button>
             </div>

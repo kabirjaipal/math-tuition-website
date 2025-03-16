@@ -44,7 +44,7 @@ const Navbar = () => {
   }, [activeLink]);
 
   return (
-    <nav className="bg-gradient-to-r from-oceanblue to-slate-700 sticky top-0 z-50">
+    <nav className="bg-linear-to-r from-oceanblue to-slate-700 sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center h-20">
@@ -74,7 +74,7 @@ const Navbar = () => {
           <div className="absolute top-2 right-2 flex items-center md:hidden">
             <button
               onClick={() => setOpen((prev) => !prev)}
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-hidden"
             >
               <FaBars className="block h-10 w-10" aria-hidden="true" />
             </button>
@@ -83,7 +83,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed inset-0 bg-gradient-to-r from-oceanblue to-slate-700 z-50 transition-opacity ${
+        className={`fixed inset-0 bg-linear-to-r from-oceanblue to-slate-700 z-50 transition-opacity ${
           open ? "opacity-100" : "opacity-0 pointer-events-none"
         } md:hidden`}
       >
@@ -92,7 +92,7 @@ const Navbar = () => {
           <div className="absolute top-2 right-2 flex items-center md:hidden">
             <button
               onClick={() => setOpen((prev) => !prev)}
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-hidden"
             >
               <FaTimes className="block" size={50} aria-hidden="true" />
             </button>
